@@ -1,9 +1,8 @@
-server:
-  port: 9081
-
 spring:
   application:
     name: point-service
+  config:
+    import: nacos:point-service-dev.yml
   cloud:
     nacos:
       discovery:
